@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Juego de Literatura Infantil</title>
+  <link rel="stylesheet" href="estilo.css">
+  <style>
+    body {
+      font-family: 'Comic Sans MS';
+      background-color: #e2504c;
+      color: #000000;
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+    h1 {
+      color: #ffffff;
+      text-align: center;
+    }
+    .pregunta {
+      background-color: #ffd6d6;
+      border: 2px solid #ff9999;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      background-color: #ba3434;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #a35034;
+    }
+    #resultado {
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 20px;
+      color: #ffc0cb;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📚 Lit Hub Game 📚</h1>
+
+  <div class="pregunta">
+    <p>1. ¿Cual es la aplicacion mas hablado en la informacion?</p>
+    <input type="radio" name="p1" value="0"> Word<br>
+    <input type="radio" name="p1" value="1"> Canva<br>
+    <input type="radio" name="p1" value="0"> PowerPoint<br>
+  </div>
+
+  <div class="pregunta"> 
+    <p>2. ¿Quien es la creadora de la Aplicacion mencionado?</p>
+    <input type="radio" name="p2" value="0"> Melanie Adele<br>
+    <input type="radio" name="p2" value="0"> Adela Speratti<br>
+    <input type="radio" name="p2" value="1"> Melanie Perkins<br>
+  </div>
+
+  <div class="pregunta">
+    <p>3. ¿En que año se fundo dicha Aplicacion?</p>
+    <input type="radio" name="p3" value="1"> 2013<br>
+    <input type="radio" name="p3" value="0"> 2012<br>
+    <input type="radio" name="p3" value="0"> 2008<br>
+  </div>
+
+  <div class="pregunta">
+    <p>4. ¿Cuantos Usuarios Utilizaron la Aplicacion en su primer año?</p>
+    <input type="radio" name="p4" value="1"> 600.000 Usuarios<br>
+    <input type="radio" name="p4" value="0"> 100.000 Usuarios<br>
+    <input type="radio" name="p4" value="0"> 300.000 Usuarios<br>
+  </div>
+  
+  <div class="pregunta">
+    <p>5. ¿Cual es la caracteristica principal de dicha Aplicacion?</p>
+    <input type="radio" name="p5" value="0"> Planillas<br>
+    <input type="radio" name="p5" value="0"> Edicion de videos<br>
+    <input type="radio" name="p5" value="1"> Todos son correctas<br>
+  </div>
+  
+  <div class="pregunta">
+    <p>6. ¿Como se llamaba la primera herramienta digital?</p>
+    <input type="radio" name="p6" value="0"> Enigma<br>
+    <input type="radio" name="p6" value="1"> Colossus<br>
+    <input type="radio" name="p6" value="0"> Ninguna de las anteriores <br>
+  </div>
+  
+  <div class="pregunta">
+    <p>7. ¿Quien creo el programa Ñe'ery?</p>
+    <input type="radio" name="p7" value="0"> MOPC<br>
+    <input type="radio" name="p7" value="1"> MEC<br>
+    <input type="radio" name="p7" value="0"> El Presidente de la republica<br>
+  </div>
+  <div class="pregunta">
+    <p>8. ¿Que incluyo en el programa de Ñe'ery en el año 2025?</p>
+    <input type="radio" name="p8" value="1"> Video Blogs<br>
+    <input type="radio" name="p8" value="0"> Realizacion de una Poesia<br>
+    <input type="radio" name="p8" value="0"> Crear un Cuento<br>
+  </div>
+
+  <button onclick="calcularResultado()">Ver Resultado</button>
+
+  <p id="resultado"></p>
+
+  <script>
+    function calcularResultado() {
+      let total = 0;
+      for (let i = 1; i <= 8; i++) {
+        const opciones = document.getElementsByName("p" + i);
+        for (let opcion of opciones) {
+          if (opcion.checked) {
+            total += parseInt(opcion.value);
+          }
+        }
+      }
+
+      let mensaje = "Tu puntaje es: " + total + "/8. ";
+      if (total === 8) {
+        mensaje += "¡Excelente! ¡! 🌟";
+      } else if (total >= 4) {
+        mensaje += "¡Muy bien! Sigue leyendo y aprendiendo. 📖";
+      } else {
+        mensaje += "¡Puedes hacerlo mejor! ¡Intenta otra vez! 💪";
+      }
+      document.getElementById("resultado").innerText = mensaje;
+    }
+  </script>
+  <button><a href="Indexprueba3 (1).html" class="button"> Atras </a> </button>
+
+</body>
+</html>
