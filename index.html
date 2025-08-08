@@ -3,8 +3,173 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="styles.css">
   <title>Mi Sitio Responsive</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #eac9c1;
+      margin: 0;
+      padding: 0;
+      color: #3e2c23;
+    }
+
+    header {
+      background-color: #8A0000;
+      padding: 10px 20px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+	  gap:10px;
+    }
+
+    .logo-container {
+      background-color: #a26769;
+      width: 15vw;
+      height: 15vh;
+      max-width: 60px;
+      max-height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: white;
+      font-size: 1.2em;
+      margin-bottom: 0;
+    }
+
+    nav {
+      flex-grow: 1;
+      text-align: center;
+	  
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .titulo {
+      text-align: center;
+      background-color: #ef9a9a;
+      padding: 30px 20px;
+      font-size: 1.5em;
+      font-style: italic;
+      border-radius: 30px 0 30px 0;
+      margin: 20px auto;
+      max-width: 90%;
+      color: #ffffff;
+    }
+
+    .contenido {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .imagen {
+      background-color: #c9b79c;
+      width: 100%;
+      max-width: 300px;
+      aspect-ratio: 3 / 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      box-shadow: 3px 3px 10px #bfae9e;
+      margin-bottom: 20px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.1em;
+      text-align: center;
+    }
+
+    .info {
+      background-color: #e57373;
+      padding: 20px;
+      border-radius: 15px;
+      width: 100%;
+      max-width: 700px;
+      margin: auto;
+      box-shadow: 2px 2px 8px #d6c3b4;
+    }
+
+    .info h2 {
+      color: #fffbff;
+    }
+
+    .info p {
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    /* Media Query: Teléfonos */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+       
+      }
+
+      nav {
+        margin-top: 10px;
+		text-align:left;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 10px 10px 0 0;
+		text-decora: none;
+		color:#ffffff;
+		font-weight:bold;
+      }
+
+      .titulo {
+        font-size: 1.2em;
+        padding: 20px 10px;
+        max-width: 95%;
+      }
+
+      .contenido {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .imagen {
+        width: 90%;
+        font-size: 1em;
+      }
+
+      .info {
+        padding: 15px;
+        width: 95%;
+      }
+    }
+
+    /* Media Query: Tablets */
+    @media (max-width:600px) {
+	  nav a {
+        margin: 10px 0;
+		display:block;
+      }
+
+      .contenido {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -13,7 +178,7 @@
 	<img src="https://i.postimg.cc/65ZmjbSQ/80da55f7-540f-47a7-b39a-77a47acf4866.jpg" alt="" style="width: 60px; height: 60px; border-radius: 50%;"> 
 	</div>
     <nav>
-      <a href="index.html">inicio</a>
+      <a href="#">inicio</a>
       <a href="información.html">Información</a>
 	  <a href="#">Poesías</a>
 	  <a href="jueguito2 (1).html">MiniJuego</a>
@@ -37,5 +202,3 @@
 
 </body>
 </html>
-
-
