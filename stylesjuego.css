@@ -1,0 +1,40 @@
+body {
+      font-family: 'Comic Sans MS';
+      background-color: #e2504c;
+      color: #000000;
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+    h1 {
+      color: #ffffff;
+      text-align: center;
+    }
+    .pregunta {
+      background-color: #ffd6d6;
+      border: 2px solid #ff9999;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      background-color: #ba3434;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #a35034;
+    }
+    #resultado {
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 20px;
+      color: #ffc0cb;
+    }
