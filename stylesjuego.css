@@ -37,4 +37,20 @@ body {
       font-size: 18px;
       margin-top: 20px;
       color: #ffc0cb;
+
+    }
+.logo-container {
+      background-color: #a26769;
+      width: 15vw;
+      height: 15vh;
+      max-width: 60px;
+      max-height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: white;
+      font-size: 1.2em;
+      margin-bottom: 0;
     }
