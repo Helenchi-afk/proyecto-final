@@ -54,3 +54,13 @@ body {
       font-size: 1.2em;
       margin-bottom: 0;
     }
+ header {
+      background-color: #8A0000;
+      padding: 10px 20px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+	  gap:10px;
+    }
+
