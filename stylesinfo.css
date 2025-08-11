@@ -50,11 +50,11 @@
  nav {
       flex-grow: 1;
       text-align: center;
-    }
-
+ }
     nav a {
       margin: 0 15px;
       text-decoration: none;
       color: #ffffff;
       font-weight: bold;
     }
+
