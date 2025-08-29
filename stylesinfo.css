@@ -1,11 +1,11 @@
- body {
-      font-family: 'Comic Sans MS';
-      background-color: #e2504c;
-      color: #000000;
-      padding: 20px;
-      max-width: 700px;
-      margin: auto;
-    }
+body {
+	 background-image: url("logo lithub.jpg");
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #eac9c1;
+      margin: 0;
+      padding: 0;
+      color: #3e2c23;
+	}
     h1 {
       color: #ffffff;
       text-align: center;
@@ -16,6 +16,9 @@
       padding: 15px;
       margin-bottom: 20px;
       border-radius: 12px;
+	  width:600px;
+	  height:150px;
+	  margin-left:450px;
     }
     button {
       display: block;
@@ -37,9 +40,18 @@
       font-size: 18px;
       margin-top: 20px;
       color: #ffc0cb;
-
     }
-.logo-container {
+	 header {
+      background-color: #8A0000;
+      padding: 10px 20px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+	  gap:10px;
+    }
+
+    .logo-container {
       background-color: #a26769;
       width: 15vw;
       height: 15vh;
@@ -54,16 +66,8 @@
       font-size: 1.2em;
       margin-bottom: 0;
     }
- header {
-      background-color: #8A0000;
-      padding: 10px 20px;
-      display: flex;
-      align-items: flex-end;
-      justify-content: flex-start;
-      flex-wrap: nowrap;
-	  gap:10px;
-    }
- nav {
+
+    nav {
       flex-grow: 1;
       text-align: center;
 	  
@@ -75,6 +79,121 @@
       color: #ffffff;
       font-weight: bold;
     }
+	.cuadro{ 
+	width:600px;
+    height:150px;
+	margin-left:450px;
+	}
+	.informacion-container {
+  display: flex;              /* Para poner el texto y el lateral uno al lado del otro */
+  justify-content: space-between;    /* Centra el bloque en la página */
+  gap: 50px;                  /* Espacio entre columnas */
+  margin-left:350px;
+  max-width: 1000px;
+  width:600px;
+    height:150px;
+}
+
+.informacion1 {
+  flex: 2;                    /* Texto principal ocupa más espacio */
+  text-align: justify;		  /* Justificado o como lo prefieras */
+  margin-left:450px;
+  width:600px;
+    height:150px;
+	margin:auto;
+	width:90%;
+	max-width:1000px;
+}
+
+.informacion2 {
+   position: fixed;      /* Flota en la pantalla */
+  top: 100px;           /* Distancia desde arriba */
+  right: 20px;          /* Pegado a la derecha */
+  width: 250px;         /* Ancho del cuadro */
+  
+  background: #f5f5f5;  /* Fondo suave */
+  padding: 15px;
+  border-radius: 12px; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* sombra flotante */
+  font-size: 0.9em;
+  
+}
+	 /* Media Query: Teléfonos */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+       
+      }
+
+      nav {
+        margin-top: 10px;
+		text-align:left;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 10px 10px 0 0;
+		text-decora: none;
+		color:#ffffff;
+		font-weight:bold;
+      }
+
+      .titulo {
+        font-size: 1.2em;
+        padding: 20px 10px;
+        max-width: 95%;
+      }
+
+      .contenido {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .imagen {
+        width: 90%;
+        font-size: 1em;
+      }
+
+      .info {
+        padding: 15px;
+        width: 95%;
+     
+    }
+	.informacion-container {
+ flex-direction:column;
+}
+
+.informacion1 {
+  flex: 2;                    /* Texto principal ocupa más espacio */
+  text-align: justify;		  /* Justificado o como lo prefieras */
+  margin-left:450px;
+  width:600px;
+    height:150px;
+}
+
+.informacion2 {
+   position: static;      /* Flota en la pantalla */
+  width: 100%;         /* Ancho del cuadro */
+  
+margin-top:20px;
+}
+  
+
+    /* Media Query: Tablets */
+    @media (max-width:600px) {
+	  nav a {
+        margin: 10px 0;
+		display:block;
+      }
+
+      .contenido {
+        flex-direction: column;
+        align-items: center;
+      }
+	
+
 
 
 
