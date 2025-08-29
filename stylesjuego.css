@@ -1,13 +1,13 @@
 body {
-      font-family: 'Comic Sans MS';
-      background-color: #e2504c;
-      color: #000000;
-      padding: 20px;
-      max-width: 700px;
-      margin: auto;
-    }
+		background-image: url("logo lithub.jpg");
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #eac9c1;
+      margin: 0;
+      padding: 0;
+      color: #3e2c23;
+	}
     h1 {
-      color: #ffffff;
+      color: #660033;
       text-align: center;
     }
     .pregunta {
@@ -16,6 +16,9 @@ body {
       padding: 15px;
       margin-bottom: 20px;
       border-radius: 12px;
+	  width:600px;
+	  height:150px;
+	  margin-left:380px;
     }
     button {
       display: block;
@@ -36,10 +39,19 @@ body {
       font-weight: bold;
       font-size: 18px;
       margin-top: 20px;
-      color: #ffc0cb;
-
+      color: black;
     }
-.logo-container {
+	 header {
+      background-color: #8A0000;
+      padding: 10px 20px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+	  gap:10px;
+    }
+
+    .logo-container {
       background-color: #a26769;
       width: 15vw;
       height: 15vh;
@@ -54,16 +66,8 @@ body {
       font-size: 1.2em;
       margin-bottom: 0;
     }
- header {
-      background-color: #8A0000;
-      padding: 10px 20px;
-      display: flex;
-      align-items: flex-end;
-      justify-content: flex-start;
-      flex-wrap: nowrap;
-	  gap:10px;
-    }
- nav {
+
+    nav {
       flex-grow: 1;
       text-align: center;
 	  
@@ -75,5 +79,59 @@ body {
       color: #ffffff;
       font-weight: bold;
     }
+	 /* Media Query: Teléfonos */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+       
+      }
 
+      nav {
+        margin-top: 10px;
+		text-align:left;
+      }
 
+      nav a {
+        display: inline-block;
+        margin: 10px 10px 0 0;
+		text-decora: none;
+		color:#ffffff;
+		font-weight:bold;
+      }
+
+      .titulo {
+        font-size: 1.2em;
+        padding: 20px 10px;
+        max-width: 95%;
+      }
+
+      .contenido {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .imagen {
+        width: 90%;
+        font-size: 1em;
+      }
+
+      .info {
+        padding: 15px;
+        width: 95%;
+      }
+    }
+
+    /* Media Query: Tablets */
+    @media (max-width:600px) {
+	  nav a {
+        margin: 10px 0;
+		display:block;
+      }
+
+      .contenido {
+        flex-direction: column;
+        align-items: center;
+      }
+		
