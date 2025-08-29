@@ -1,5 +1,5 @@
 body {
-	 background-image: url("logo lithub.jpg");
+	
       font-family: 'Segoe UI', sans-serif;
       background-color: #eac9c1;
       margin: 0;
@@ -163,14 +163,12 @@ body {
     }
 	.informacion-container {
  flex-direction:column;
+ gap:10px;
 }
 
 .informacion1 {
-  flex: 2;                    /* Texto principal ocupa más espacio */
-  text-align: justify;		  /* Justificado o como lo prefieras */
-  margin-left:450px;
-  width:600px;
-    height:150px;
+  flex-direction:column;
+ gap:10px;
 }
 
 .informacion2 {
@@ -178,6 +176,13 @@ body {
   width: 100%;         /* Ancho del cuadro */
   
 margin-top:20px;
+}
+body{
+	font-size:14px;
+}
+img{
+	max-width:100%;
+	height:auto;
 }
   
 
@@ -192,8 +197,6 @@ margin-top:20px;
         flex-direction: column;
         align-items: center;
       }
+	}
 	
-
-
-
 
