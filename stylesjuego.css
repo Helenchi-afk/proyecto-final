@@ -1,5 +1,5 @@
-body {
-		background-image: url("logo lithub.jpg");
+  body {
+		
       font-family: 'Segoe UI', sans-serif;
       background-color: #eac9c1;
       margin: 0;
@@ -80,13 +80,22 @@ body {
       font-weight: bold;
     }
 	 /* Media Query: Teléfonos */
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       header {
         flex-direction: column;
         align-items: flex-start;
        
       }
-
+	  body{
+		  font-size:14px;
+	  }
+	   .pregunta {
+     
+	  width:95%;
+	   margin:auto;
+	   }
+	   
+	 
       nav {
         margin-top: 10px;
 		text-align:left;
@@ -134,4 +143,5 @@ body {
         flex-direction: column;
         align-items: center;
       }
+	}
 		
