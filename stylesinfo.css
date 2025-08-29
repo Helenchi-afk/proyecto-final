@@ -132,6 +132,10 @@ body {
         width: 95%;
      
     }
+		.informacion1 {
+  margin:auto;
+  width:95%;
+		}
 	
 body{
 	font-size:14px;
@@ -155,5 +159,6 @@ img{
       }
 	}
 	
+
 
 
