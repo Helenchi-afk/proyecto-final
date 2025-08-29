@@ -84,38 +84,9 @@ body {
     height:150px;
 	margin-left:450px;
 	}
-	.informacion-container {
-  display: flex;              /* Para poner el texto y el lateral uno al lado del otro */
-  justify-content: space-between;    /* Centra el bloque en la página */
-  gap: 50px;                  /* Espacio entre columnas */
-  margin-left:350px;
-  max-width: 1000px;
-  width:600px;
-    height:150px;
-}
+	
 
-.informacion1 {
-  flex: 2;                    /* Texto principal ocupa más espacio */
-  text-align: justify;		  /* Justificado o como lo prefieras */
-  margin-left:450px;
-  width:600px;
-    height:150px;
-	margin:auto;
-	width:90%;
-	max-width:1000px;
-}
 
-.informacion2 {
-   position: fixed;      /* Flota en la pantalla */
-  top: 100px;           /* Distancia desde arriba */
-  right: 20px;          /* Pegado a la derecha */
-  width: 250px;         /* Ancho del cuadro */
-  
-  background: #f5f5f5;  /* Fondo suave */
-  padding: 15px;
-  border-radius: 12px; 
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* sombra flotante */
-  font-size: 0.9em;
   
 }
 	 /* Media Query: Teléfonos */
@@ -161,22 +132,7 @@ body {
         width: 95%;
      
     }
-	.informacion-container {
- flex-direction:column;
- gap:10px;
-}
-
-.informacion1 {
-  flex-direction:column;
- gap:10px;
-}
-
-.informacion2 {
-   position: static;      /* Flota en la pantalla */
-  width: 100%;         /* Ancho del cuadro */
-  
-margin-top:20px;
-}
+	
 body{
 	font-size:14px;
 }
@@ -199,4 +155,5 @@ img{
       }
 	}
 	
+
 
